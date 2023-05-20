@@ -1,6 +1,8 @@
 # **Jurassic Page** 
 
-![JurassicPageLogo](https://logos-world.net/imageup/Jurassic_Park/Jurassic_Park-Logo-PNG2.png)
+<p align="center">
+ <img src='https://logos-world.net/imageup/Jurassic_Park/Jurassic_Park-Logo-PNG2.png' width='300'>
+</p>
 
 ## **Bienvenidos a nuestro Ecommerce**
 
@@ -9,11 +11,11 @@
 
 ## **Paleta de colores**
 
-- | Color | HEX |
-- | Dark Cyan | #00919C |
-- | Jungle green | #37A584 |
-- | Van Dyke | #403737 |
-- | Platinum | #E8EBEA |
+- **| Color | HEX |**
+- | Dark Cyan | `#00919C` |
+- | Jungle green | `#37A584` |
+- | Van Dyke | `#403737` |
+- | Platinum | `#E8EBEA` |
 
 ## Link: https://coolors.co/00919c-37a584-403737-e8ebea
 
