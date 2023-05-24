@@ -28,3 +28,5 @@ font-family: 'Open Sans', sans-serif;
 https://www.figma.com/file/oh4ZKo5oy117BLwmevJpRN/JurassicPage?type=design&node-id=0-1&t=SAd5VR2HPrt4mtkQ-0
 
 ### Adjunto Carpeta de Assets y Carpeta de Figma con los diseños en PNG.
+
+### Se suben Archivos Html y Css 
