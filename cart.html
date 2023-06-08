@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar" id="navbar-header">
       <div class="logo-nav">
         <a href="./index.html"
           ><img
@@ -21,22 +21,36 @@
             alt="logo"
             width="50px"
         /></a>
+        <a href="#navbar-header" class="navbar-menu-mobile open"
+          ><img
+            src="./assets/bars-solid.svg"
+            alt="logo"
+            width="30px"
+        /></a>
+        <a href="#" class="navbar-menu-mobile close"
+          ><img
+            src="./assets/xmark-solid.svg"
+            alt="logo"
+            width="30px"
+        /></a>
       </div>
       <nav>
-        <ul>
+        <ul class="navbar-container">
           <li><a class="Jungle-Green" href="./home.html">Home</a></li>
           <li><a class="Dark-Cyan" href="./details.html">Product</a></li>
-          <li><a class="Dark-Cyan" href="">About Us</a></li>
-          <li><a class="Jungle-Green" href="">Account</a></li>
+          <li><a class="Jungle-Green" href="#">About Us</a></li>
+          <li><a class="Dark-Cyan" href="./account.html">Account</a></li>
+          <li>
+            <a href="./cart.html"
+              ><img
+                src="./assets/cart-shopping-solid.svg"
+                width="30px"
+                height="30px"
+                alt="cart"
+            /></a>
+          </li>
         </ul>
       </nav>
-      <a href="./cart.html"
-        ><img
-          src="./assets/cart-shopping-solid.svg"
-          width="30px"
-          height="30px"
-          alt="cart"
-      /></a>
     </header>
 
     <div class="cart-container">

@@ -63,6 +63,8 @@ h1 {
     padding: 20px 0;
     margin-top: 25px;
     cursor: pointer;
+    color: #E8EBEA;
+    font-weight: bold;
 }
 
 .button a {
@@ -103,27 +105,55 @@ h1 {
 }
 
 /* Home-Page */
+
 /* NAVBAR */
 .navbar {
     width: 100%;
+
+}
+
+.logo-nav {
+    padding: 1rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    /* width: 100%; */
 }
 
-nav {
-    flex: 1;
-    text-align: right;
+.navbar-menu-mobile {
+    padding: 6px;
+    display: flex;
 }
-nav ul {
-    display: inline-block;
+
+.navbar-container {
+    font-size: 2rem;
+    background: #403737;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     list-style-type: none;
-    font-size: 30px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 50px;
+#navbar-header:target .navbar-container {
+    height: 300px;
+}
+
+#navbar-header:target .open {
+    display: none;
+}
+
+#navbar-header:target .close {
+    display: flex;
+}
+
+.close {
+    display: none;
 }
 
 a {
@@ -138,7 +168,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 .input{
@@ -424,10 +454,174 @@ footer ul li, h3 {
     align-items: center;
 }
 
+/* Login and Register */
+
+.login-logo {
+    width: 240px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #363030;
+    border-radius: 22px;
+}
+
+.form .registration {
+    display: none;
+}
+#check:checked ~ .registration {
+    display: block;
+}
+
+#check:checked ~ .login {
+    display: none;
+}
+#check {
+    display: none;
+}
+
+.form .forms {
+    padding: 2rem;
+    width: 330px;
+}
+
+.form h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.forms input {
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border-radius: 22px;
+    outline: none;
+    font-weight: bold;
+}
+
+
+.forms input:focus {
+    box-shadow: 0 1px 0 #00919C;
+}
+
+.forms a {
+    font-size: 16px;
+    color: #E8EBEA;
+    text-decoration: none;
+}
+
+.forms a:hover {
+    text-decoration: underline;
+}
+
+.forms input .button {
+    color: #E8EBEA;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+    color: #00919C;
+}
+
+.signup label {
+    cursor: pointer;
+    color: #E8EBEA;
+}
+
+.signup label:hover {
+    text-decoration: underline;
+}
+
 /* media query */
 
 @media (max-width: 600px) {
     .intro {
       flex-direction: column-reverse;
+    }
+
+    .search {
+        flex-direction: column;
+        padding: 30px;
+    }   
+
+    .arrivals{
+        width: 70%;
+        height: 70%;
+    }
+
+    .detail-img img {
+        margin-bottom: 20px;
+        width: 300px;
+        height: 300px;
+    }
+    
+
+    .description {
+        align-items: center;
+    }
+
+    .product-1 {
+        width: 120%;
+    }
+
+    .cart-img img {
+        width: 90px;
+        height: 80px;
+    }
+
+    .search-btn {
+        padding: 5px;
+    }
+
+    .detail-cart {
+        font-size: 10px;
+        margin-left: 30px;
+    }
+
+    .confirm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .confirm button {
+        width: 90%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 760px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-menu-mobile {
+        display: none;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    .navbar-container {
+        height: auto;
+        flex-direction: row;
+        position: static;
+        width: 100%;
     }
 }
