@@ -1,26 +1,27 @@
 const express = require('express');
+const routerUsuarios = require('./routes/usuariosRoutes');
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
-    res.send("Onboarding")
-})
+app.set("view engine", "ejs");
 
-app.get("/home", (req, res) => {
-    res.send("Home Page")
-})
+app.use(express.static("public"));
+app.use(cookieParser());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(
+  session({
+    secret: "12345",
+    resave: false,
+    saveUninitialized: false,
+    cookie: { maxAge: 5000 },
+  })
+);
 
-app.get("/details", (req, res) => {
-    res.send("Product's details")
-})
-
-app.get("/cart", (req, res) => {
-    res.send("Cart Page")
-})
-
-app.get("/account", (req, res) => {
-    res.send("Login/Register")
-})
+app.use("/", routerUsuarios)
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)

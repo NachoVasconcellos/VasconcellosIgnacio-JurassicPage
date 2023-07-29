@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "nombre": "Lord Vader2",
+    "price": 3000
+  },
+  {
+    "id": "2",
+    "nombre": "Anakin",
+    "price": 3000
+  },
+  {
+    "id": "3",
+    "nombre": "R2-D2",
+    "price": 3000
+  }
+]
