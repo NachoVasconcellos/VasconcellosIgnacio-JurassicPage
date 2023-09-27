@@ -45,4 +45,4 @@ ALTER TABLE Productos ADD FOREIGN KEY (Categoria_id) REFERENCES Categorias(id);
 SELECT * FROM productos;
 SELECT * FROM usuarios;
 
-SELECT * FROM productos INNER JOIN Categorias ON productos.Categoria_id=Categorias.Id;
+SELECT * FROM productos INNER JOIN Categorias ON productos.Categoria_id=Categorias.id;

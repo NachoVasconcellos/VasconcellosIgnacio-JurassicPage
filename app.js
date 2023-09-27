@@ -1,5 +1,5 @@
 const express = require('express');
-const routerUsuarios = require('./routes/usuariosRoutes');
+const router = require('./routes/usuariosRoutes');
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 
@@ -21,7 +21,7 @@ app.use(
   })
 );
 
-app.use("/", routerUsuarios)
+app.use("/", router)
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)
